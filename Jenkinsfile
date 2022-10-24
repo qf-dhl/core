@@ -12,7 +12,7 @@ pipeline {
             
                 git branch: 'main', url: 'https://github.com/qf-dhl/core.git'
 
-                sh "mvn -Dmaven.test.failure.ignore=true clean deploy"
+                sh "mvn -Dmaven.test.failure.ignore=true -s settings.xml clean deploy"
 
             }
 

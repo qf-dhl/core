@@ -18,5 +18,21 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
+  </dependencies> 
+ <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>core-releases</id>
+      <name>core-releases</name>
+      <url>http://40.114.27.162:8081/repository/core-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>core-snapshots</id>
+      <name>core-snapshots</name>
+      <url>http://40.114.27.162:8081/repository/core-snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
